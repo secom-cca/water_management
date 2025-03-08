@@ -1,4 +1,14 @@
 {UTF-8}
+Per capita domestic water demand=
+	7.5
+	~	Month
+	~		|
+
+Domestic water demand=
+	Per capita domestic water demand * Population * (1 + 0.01 * (Temperature - 15))
+	~	
+	~		|
+
 Deep groundwater outflow  = A FUNCTION OF( )
 	~	
 	~		|
@@ -39,12 +49,6 @@ Percolation to deep  = A FUNCTION OF( )
 	~		|
 
 Deep groundwater inflow  = A FUNCTION OF( )
-	~	
-	~		|
-
-Domestic water demand=A FUNCTION OF(Domestic water demand,Per capita domestic water demand\
-		,Population) ~~|
-Domestic water demand=
 	~	
 	~		|
 
@@ -118,10 +122,6 @@ Expected land area for crop X  = A FUNCTION OF( Net benefit from crop X)
 
 Expected water requirement for crop X  = A FUNCTION OF( Expected land area for crop X\
 		,Irrigation water requirement for crop X)
-	~	
-	~		|
-
-Per capita domestic water demand  = A FUNCTION OF( )
 	~	
 	~		|
 
@@ -368,8 +368,8 @@ $-1--1--1,0,|12||-1--1--1|-1--1--1|-1--1--1|-1--1--1|-1--1--1|96,96,100,2
 1,102,103,100,4,0,0,22,0,192,0,-1--1--1,,1|(368,89)|
 11,103,0,368,106,8,6,33,3,0,0,4,0,0,0,0,0,0,0,0,0
 10,104,Evapotranspiration,423,106,47,22,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
-10,105,Temperature,621,78,42,22,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
-1,106,105,104,1,0,0,0,0,192,0,-1--1--1,,1|(502,29)|
+10,105,Temperature,624,80,45,24,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,106,105,104,1,0,0,0,0,192,0,-1--1--1,,1|(503,29)|
 10,107,Population,1174,225,42,22,3,3,0,0,-1,0,0,0,0,0,0,0,0,0
 12,108,48,1330,224,10,8,0,3,0,0,-1,0,0,0,0,0,0,0,0,0
 1,109,111,107,100,0,0,22,0,192,0,-1--1--1,,1|(1235,224)|
@@ -452,9 +452,10 @@ $-1--1--1,0,|12||-1--1--1|-1--1--1|-1--1--1|-1--1--1|-1--1--1|96,96,100,2
 11,186,0,431,444,8,6,33,3,0,0,4,0,0,0,0,0,0,0,0,0
 10,187,Seepage from deep,463,444,24,25,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
 1,188,179,63,1,0,0,0,0,192,0,-1--1--1,,1|(627,551)|
+1,189,105,131,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
 ///---\\\
 :L<%^E!@
-5:Domestic water demand
+5:Per capita domestic water demand
 19:100,0
 24:0
 25:0
