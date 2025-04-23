@@ -34,6 +34,16 @@ npm create @sdeverywhere@latest
 #   - the model comparison definitions (model/comparisons/*.yaml)
 npm run dev
 ```
+## How to use python UI
+In addition to directly use .mdl file from Vensim, we can run this file from python.
+To run the simulation, first install the required libraries with 
+```sh
+pip install pysd
+```
+and run
+```sh
+python main.py
+```
 
 ## License
 
