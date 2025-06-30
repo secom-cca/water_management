@@ -48,8 +48,8 @@ Domestic return flow=
 	~		|
 
 Domestic water demand=
-	Per capita domestic water demand * Population
-	~	m3
+	Per capita domestic water demand * Population * 30
+	~	m3/Month
 	~		|
 
 Domestic water use=
@@ -95,7 +95,7 @@ Inflow from Indus = WITH LOOKUP (
 	~		|
 
 Runoff=
-	Area * Precipitation * 0.001 + Inflow from Indus * 1e+08
+	Area * Precipitation * 0.001 + Inflow from Indus * 1e+09
 	~	m3
 	~		|
 
@@ -252,8 +252,8 @@ Population= INTEG (
 	~		|
 
 Per capita domestic water demand=
-	4.5 * 30
-	~	m3/day
+	4.5
+	~	m3/day [0,10]
 	~		|
 
 ********************************************************
@@ -455,7 +455,7 @@ $-1--1--1,0,|12||-1--1--1|-1--1--1|-1--1--1|-1--1--1|-1--1--1|96,96,5,2
 :L<%^E!@
 1:zainab.vdfx
 4:Time
-5:Per capita domestic water demand
+5:Net water demand
 9:zainab
 19:5,0
 24:0
